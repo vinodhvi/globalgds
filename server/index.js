@@ -199,8 +199,8 @@ app.post('/car-confirm-booking-api', (req, res) => {
 });
 
 
-server.listen(PORT, HOST, () => {
-  console.log(`Server running at http://${HOST}:${PORT}/`);
+server.listen(10000, '0.0.0.0', () => {
+  console.log('Server running on http://0.0.0.0:10000');
 });
 
 
