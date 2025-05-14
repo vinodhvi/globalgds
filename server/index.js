@@ -199,7 +199,7 @@ app.post('/car-confirm-booking-api', (req, res) => {
 });
 
 
-server.listen(10000, '0.0.0.0', () => {
+app.listen(10000, '0.0.0.0', () => {
   console.log('Server running on http://0.0.0.0:10000');
 });
 
