@@ -11,8 +11,8 @@ const corsOptions ={
 }
 app.use(cors(corsOptions));
 
-const port = process.env.PORT || 10000;
-const HOST = '0.0.0.0';
+const PORT = process.env.PORT || 3000;
+// const HOST = '0.0.0.0';
 // const server = http.createServer((req, res) => {
 //   res.statusCode = 200;
 //   res.setHeader('Content-Type', 'text/plain');
@@ -198,9 +198,8 @@ app.post('/car-confirm-booking-api', (req, res) => {
     });
 });
 
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Server running at http://0.0.0.0:${port}`);
+server.listen(PORT, () => {
+  console.log(`Server running at http://0.0.0.0:${PORT}/`);
 });
-
 
   
